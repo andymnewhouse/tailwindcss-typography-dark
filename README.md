@@ -1,13 +1,11 @@
-<p>
-  <img alt="Tailwind CSS Typography" width="350" src="./.github/logo.svg">
-</p>
+# Tailwind Typography Dark
 
-A plugin that provides a set of `prose` classes you can use to add beautiful typographic defaults to any vanilla HTML you don't control (like HTML rendered from Markdown, or pulled from a CMS).
+A fork of the TailwindLabs Typography plugin that provides a set of `prose-dark` classes you can use to add beautiful typographic defaults to any vanilla HTML you don't control (like HTML rendered from Markdown, or pulled from a CMS). All styles are an inverse of the official colors.
 
 [View live demo](https://tailwindcss-typography.netlify.app/)
 
 ```html
-<article class="prose lg:prose-xl">
+<article class="prose-dark lg:prose-dark-xl">
   {{ markdown }}
 </article>
 ```
@@ -18,10 +16,10 @@ Install the plugin from npm:
 
 ```sh
 # Using npm
-npm install @tailwindcss/typography
+npm install andymnewhouse/typography-dark
 
 # Using Yarn
-yarn add @tailwindcss/typography
+yarn add andymnewhouse/typography-dark
 ```
 
 Then add the plugin to your `tailwind.config.js` file:
@@ -33,48 +31,18 @@ module.exports = {
     // ...
   },
   plugins: [
-    require('@tailwindcss/typography'),
+    require('andymnewhouse/typography-dark'),
     // ...
   ],
 }
 ```
 
-### Using a CDN
-
-If you need to pull in these styles via CDN, you can do so using services like UNPKG or jsDeliver:
-
-```html
-<!-- From UNPKG -->
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css"
-/>
-
-<!-- From jsDelivr -->
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@tailwindcss/typography@0.2.x/dist/typography.min.css"
-/>
-```
-
-To use these styles alongside the rest of Tailwind via CDN, we recommend pulling in each layer separately so you can put the styles in the correct order:
-
-```html
-<link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.5/dist/base.min.css" />
-<link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.5/dist/components.min.css" />
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css"
-/>
-<link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.5/dist/utilities.min.css" />
-```
-
 ## Usage
 
-Now you can use the `prose` classes to add sensible typography styles to any vanilla HTML:
+Now you can use the `prose-dark` classes to add sensible typography styles to any vanilla HTML:
 
 ```html
-<article class="prose lg:prose-xl">
+<article class="prose-dark lg:prose-dark-xl">
   <h1>Garlic bread with cheese: What the science tells us</h1>
   <p>
     For years parents have espoused the health benefits of eating garlic bread with cheese to their
@@ -94,7 +62,7 @@ Now you can use the `prose` classes to add sensible typography styles to any van
 Size modifiers allow you to adjust the overall size of your typography for different contexts.
 
 ```html
-<article class="prose prose-xl">
+<article class="prose-dark prose-dark-xl">
   {{ markdown }}
 </article>
 ```
@@ -115,12 +83,12 @@ Size modifiers are designed to be used with the [multi-class modifier pattern](h
 
 ```html
 <!-- Will not work -->
-<article class="prose-lg">
+<article class="prose-dark-lg">
   {{ markdown }}
 </article>
 
 <!-- Always add the `prose` class -->
-<article class="prose prose-lg">
+<article class="prose-dark prose-dark-lg">
   {{ markdown }}
 </article>
 ```
@@ -130,7 +98,7 @@ Size modifiers are designed to be used with the [multi-class modifier pattern](h
 None of the sizes are automatically responsive, but responsive variants are provided for each size modifier so you can easily change the typography size at different breakpoints:
 
 ```html
-<article class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl">
+<article class="prose-dark prose-dark-sm sm:prose-dark lg:prose-dark-lg xl:prose-dark-xl">
   {{ markdown }}
 </article>
 ```
@@ -188,7 +156,7 @@ To customize the styles provided by this plugin, add your overrides under the `t
 // tailwind.config.js
 module.exports = {
   theme: {
-    typography: {
+    'typography-dark': {
       default: {
         css: {
           color: '#333',
@@ -203,19 +171,19 @@ module.exports = {
     },
   },
   plugins: [
-    require('@tailwindcss/typography'),
+    require('andymnewhouse/typography-darl'),
     // ...
   ],
 }
 ```
 
-Like with all theme customizations in Tailwind, you can also define the `typography` key as a function if you need access to the `theme` helper:
+Like with all theme customizations in Tailwind, you can also define the `typography-dark` key as a function if you need access to the `theme` helper:
 
 ```js
 // tailwind.config.js
 module.exports = {
   theme: {
-    typography: (theme) => ({
+    'typography-dark': (theme) => ({
       default: {
         css: {
           color: theme('colors.gray.800'),
@@ -226,7 +194,7 @@ module.exports = {
     }),
   },
   plugins: [
-    require('@tailwindcss/typography'),
+    require('andymnewhouse/typography-dark'),
     // ...
   ],
 }
@@ -261,7 +229,7 @@ module.exports = {
     },
   },
   plugins: [
-    require('@tailwindcss/typography'),
+    require('andymnewhouse/typography'),
     // ...
   ],
 }
@@ -288,7 +256,7 @@ module.exports = {
     },
   },
   plugins: [
-    require('@tailwindcss/typography'),
+    require('andymnewhouse/typography'),
     // ...
   ],
 }
@@ -324,7 +292,7 @@ module.exports = {
     // ...
   },
   plugins: [
-    require('@tailwindcss/typography')({
+    require('andymnewhouse/typography')({
       modifiers: ['sm', 'lg'],
     }),
     // ...
@@ -347,7 +315,7 @@ module.exports = {
     // ...
   },
   plugins: [
-    require('@tailwindcss/typography'),
+    require('andymnewhouse/typography'),
     // ...
   ],
   variants: {

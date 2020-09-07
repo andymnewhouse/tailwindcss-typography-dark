@@ -1,5 +1,5 @@
 {
-  "name": "@tailwindcss/typography",
+  "name": "@tailwindcss/typography-dark",
   "version": "0.2.0",
   "description": "A Tailwind CSS plugin for automatically styling plain HTML content with beautiful typographic defaults.",
   "main": "src/index.js",

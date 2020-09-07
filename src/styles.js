@@ -12,17 +12,17 @@ module.exports = {
   default: {
     css: [
       {
-        color: defaultTheme.colors.gray[700],
+        color: defaultTheme.colors.gray[300],
         maxWidth: '65ch',
         '[class~="lead"]': {
-          color: defaultTheme.colors.gray[700],
+          color: defaultTheme.colors.gray[300],
         },
         a: {
-          color: defaultTheme.colors.gray[900],
+          color: defaultTheme.colors.gray[100],
           textDecoration: 'underline',
         },
         strong: {
-          color: defaultTheme.colors.gray[900],
+          color: defaultTheme.colors.gray[100],
           fontWeight: '600',
         },
         ol: {
@@ -36,7 +36,7 @@ module.exports = {
           content: 'counter(list-counter) "."',
           position: 'absolute',
           fontWeight: '400',
-          color: defaultTheme.colors.gray[600],
+          color: defaultTheme.colors.gray[400],
         },
         'ul > li': {
           position: 'relative',
@@ -44,19 +44,19 @@ module.exports = {
         'ul > li::before': {
           content: '""',
           position: 'absolute',
-          backgroundColor: defaultTheme.colors.gray[400],
+          backgroundColor: defaultTheme.colors.gray[600],
           borderRadius: '50%',
         },
         hr: {
-          borderColor: defaultTheme.colors.gray[300],
+          borderColor: defaultTheme.colors.gray[700],
           borderTopWidth: 1,
         },
         blockquote: {
           fontWeight: '500',
           fontStyle: 'italic',
-          color: defaultTheme.colors.gray[900],
+          color: defaultTheme.colors.gray[100],
           borderLeftWidth: '0.25rem',
-          borderLeftColor: defaultTheme.colors.gray[300],
+          borderLeftColor: defaultTheme.colors.gray[700],
           quotes: '"\\201C""\\201D""\\2018""\\2019"',
         },
         'blockquote p:first-of-type::before': {
@@ -66,26 +66,26 @@ module.exports = {
           content: 'close-quote',
         },
         h1: {
-          color: defaultTheme.colors.gray[900],
+          color: defaultTheme.colors.gray[100],
           fontWeight: '800',
         },
         h2: {
-          color: defaultTheme.colors.gray[900],
+          color: defaultTheme.colors.gray[100],
           fontWeight: '700',
         },
         h3: {
-          color: defaultTheme.colors.gray[900],
+          color: defaultTheme.colors.gray[100],
           fontWeight: '600',
         },
         h4: {
-          color: defaultTheme.colors.gray[900],
+          color: defaultTheme.colors.gray[100],
           fontWeight: '600',
         },
         'figure figcaption': {
-          color: defaultTheme.colors.gray[600],
+          color: defaultTheme.colors.gray[400],
         },
         code: {
-          color: defaultTheme.colors.gray[900],
+          color: defaultTheme.colors.gray[100],
           fontWeight: '600',
         },
         'code::before': {
@@ -124,17 +124,17 @@ module.exports = {
           marginBottom: em(32, 16),
         },
         thead: {
-          color: defaultTheme.colors.gray[900],
+          color: defaultTheme.colors.gray[100],
           fontWeight: '600',
           borderBottomWidth: '1px',
-          borderBottomColor: defaultTheme.colors.gray[400],
+          borderBottomColor: defaultTheme.colors.gray[600],
         },
         'thead th': {
           verticalAlign: 'bottom',
         },
         'tbody tr': {
           borderBottomWidth: '1px',
-          borderBottomColor: defaultTheme.colors.gray[300],
+          borderBottomColor: defaultTheme.colors.gray[700],
         },
         'tbody tr:last-child': {
           borderBottomWidth: '0',
